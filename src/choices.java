@@ -11,4 +11,24 @@ public class choices {
     String optionsArray4[] = {"UNFINISHED I take the right path", "I take the left path"};
 
     String optionsArray5[] = {"Pretend to die", "Run from the arrow volley!", "Charge at the archers!"};
+
+    public String[] getOptionsArray() {
+        return optionsArray;
+    }
+
+    public String[] getOptionsArray2() {
+        return optionsArray2;
+    }
+
+    public String[] getOptionsArray3() {
+        return optionsArray3;
+    }
+
+    public String[] getOptionsArray4() {
+        return optionsArray4;
+    }
+
+    public String[] getOptionsArray5() {
+        return optionsArray5;
+    }
 }

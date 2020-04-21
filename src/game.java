@@ -2,16 +2,7 @@ import javax.swing.*; import java.util.*;
 
 public class game {
     public static void main(String[] args) {
-
-        String optionsArray[] = {"Litteraly Die", "Run you fuck!", "Fight the old man!"};
-
-        String optionsArray2[] = {"Pick Up a Rock and Throw it at him", "Run away!", "Fight the spooky fish"};
-
-        String optionsArray3[] = {"The Bartender Sent Me", "The Old Man Sent Me", "I Found This Place Myself"};
-
-        String optionsArray4[] = {"UNFINISHED I take the right path", "I take the left path"};
-
-        String optionsArray5[] = {"Pretend to die", "Run from the arrow volley!", "Charge at the archers!"};
+        choices choices = new choices();
 
         Random rand = new Random();
         int codeLock = rand.nextInt(9999) + 1;
@@ -36,8 +27,7 @@ public class game {
             System.exit(0);
         }
         JOptionPane.showMessageDialog(null, "This cave sure is spooky");
-        Object jOptionPane = JOptionPane.showInputDialog(null, "Big scary man appears", "What you do?", JOptionPane.WARNING_MESSAGE, null, optionsArray, optionsArray[0]);
-
+        Object jOptionPane = JOptionPane.showInputDialog(null, "Big scary man appears", "What you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray(), choices.getOptionsArray()[0]);
         if (jOptionPane.equals("Fight the old man!")) {
             JOptionPane.showMessageDialog(null, "You stab the old and grimey man and he just dies");
 
@@ -78,7 +68,7 @@ public class game {
         if (pond == JOptionPane.YES_OPTION) {
             JOptionPane.showMessageDialog(null, "You walk up to the pond and start looking down into it");
             JOptionPane.showMessageDialog(null, "As you peer down into the pond a massive fish man jumps out of the lake!");
-            Object jOptionPane2 = JOptionPane.showInputDialog(null, "The Burly Fish Man lunges towards you", "What do you do?", JOptionPane.WARNING_MESSAGE, null, optionsArray2, optionsArray2[0]);
+            Object jOptionPane2 = JOptionPane.showInputDialog(null, "The Burly Fish Man lunges towards you", "What do you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray2(), choices.getOptionsArray2()[0]);
             if (jOptionPane2.equals("Run away!")) {
                 JOptionPane.showMessageDialog(null, "You run away from the fish man, Luckily the fish man has fin legs wich makes him slow as shit");
             } else if (jOptionPane2.equals("Fight the spooky fish")) {
@@ -102,7 +92,7 @@ public class game {
             System.out.println("You Died");
             System.exit(0);
         }
-        Object jOptionPane3 = JOptionPane.showInputDialog(null, "WHOM SENT YOU HERE?", "Who Sent You?", JOptionPane.QUESTION_MESSAGE, null, optionsArray3, optionsArray3[0]);
+        Object jOptionPane3 = JOptionPane.showInputDialog(null, "WHOM SENT YOU HERE?", "Who Sent You?", JOptionPane.QUESTION_MESSAGE, null, choices.getOptionsArray3(), choices.getOptionsArray3()[0]);
         if (jOptionPane3.equals("I Found This Place Myself")) {
             JOptionPane.showMessageDialog(null, "FOR THY HONESY YOU SHALL PASS THROUGH THE GATES");
         } else {
@@ -113,7 +103,7 @@ public class game {
         }
         JOptionPane.showMessageDialog(null, "The massive gates slowly opens..");
         JOptionPane.showMessageDialog(null, "Once the gates have finally opened you see a fork in the road");
-        Object jOptionPane4 = JOptionPane.showInputDialog(null, "The right path leads to a small mineshaft, The left path leads to a large open space.", "Wich path do you take?", JOptionPane.QUESTION_MESSAGE, null, optionsArray4, optionsArray4[0]);
+        Object jOptionPane4 = JOptionPane.showInputDialog(null, "The right path leads to a small mineshaft, The left path leads to a large open space.", "Wich path do you take?", JOptionPane.QUESTION_MESSAGE, null, choices.getOptionsArray4(), choices.getOptionsArray4()[0]);
         if (jOptionPane4.equals("UNFINISHED I take the right path")) {
             JOptionPane.showMessageDialog(null, namn + " walks toward the old mineshaft...");
             JOptionPane.showMessageDialog(null, "You reach the old mineshaft wich seems abandoned since long ago..");
@@ -122,7 +112,7 @@ public class game {
             JOptionPane.showMessageDialog(null, namn + " walks toward the large open space...");
             JOptionPane.showMessageDialog(null, "The large open space is eeriely empty...");
             JOptionPane.showMessageDialog(null, "But out of nowhere an arrow comes flying past you");
-            Object jOptionPane5 = JOptionPane.showInputDialog(null, "You hear several more arrows come flying toward you!", "What do you do?", JOptionPane.WARNING_MESSAGE, null, optionsArray5, optionsArray5[0]);
+            Object jOptionPane5 = JOptionPane.showInputDialog(null, "You hear several more arrows come flying toward you!", "What do you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray5(), choices.getOptionsArray5()[0]);
             if (jOptionPane5.equals("Pretend to die")) {
                 JOptionPane.showMessageDialog(null, "You pretend to get hit by an arrow and fall to the ground");
                 JOptionPane.showMessageDialog(null, "As you lay on the ground pretending to be dead you start hearing footsteps..");
