@@ -94,7 +94,7 @@ public class game {
         }
         Object jOptionPane3 = JOptionPane.showInputDialog(null, "WHOM SENT YOU HERE?", "Who Sent You?", JOptionPane.QUESTION_MESSAGE, null, choices.getOptionsArray3(), choices.getOptionsArray3()[0]);
         if (jOptionPane3.equals("I Found This Place Myself")) {
-            JOptionPane.showMessageDialog(null, "FOR THY HONESY YOU SHALL PASS THROUGH THE GATES");
+            JOptionPane.showMessageDialog(null, "FOR THY HONESTY YOU SHALL PASS THROUGH THE GATES");
         } else {
             JOptionPane.showMessageDialog(null, "SO YOU DARE LIE TO ME? I SHALL SMITE THEE TO THE GROUND");
             JOptionPane.showMessageDialog(null, "A large lightning bolt flies out of the gate and smites you into ashes");
