@@ -13,7 +13,7 @@ public class game {
 
         JOptionPane.showMessageDialog(null, "Before you left the Inn you rested in, an old man shouted THE CODE TO THE DOOR IS" + " " + codeLock);
         JOptionPane.showMessageDialog(null, "The cave is big and dark, very spooky");
-        JOptionPane.showMessageDialog(null, "You come up to a big door that has some weird numbers engarved into some keypad");
+        JOptionPane.showMessageDialog(null, "You come up to a big door that has some weird numbers engraved into some keypad");
         JOptionPane.showMessageDialog(null, "The door has a note attached to it that reads...");
 
         String code = JOptionPane.showInputDialog(null, "What is the code?");
@@ -27,17 +27,17 @@ public class game {
             System.exit(0);
         }
         JOptionPane.showMessageDialog(null, "This cave sure is spooky");
-        Object jOptionPane = JOptionPane.showInputDialog(null, "Big scary man appears", "What you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray(), choices.getOptionsArray()[0]);
+        Object jOptionPane = JOptionPane.showInputDialog(null, "A big scary man appears", "What do you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray(), choices.getOptionsArray()[0]);
         if (jOptionPane.equals("Fight the old man!")) {
-            JOptionPane.showMessageDialog(null, "You stab the old and grimey man and he just dies");
+            JOptionPane.showMessageDialog(null, "You stab the old and dusty man and he dies");
 
-        } else if (jOptionPane.equals("Run you fuck!")) {
+        } else if (jOptionPane.equals("Run away!")) {
             JOptionPane.showMessageDialog(null, "The big scary man throws a rock at you and you die");
             System.out.println("You Died");
             System.exit(0);
 
         } else {
-            JOptionPane.showMessageDialog(null, "You point your dagger towards yourself and push it into your stomach.");
+            JOptionPane.showMessageDialog(null, "You lay down and accept death.");
             System.out.println("You Died");
             System.exit(0);
 

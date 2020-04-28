@@ -2,7 +2,7 @@ import javax.swing.*; import java.util.*;
 
 public class choices {
 
-    String optionsArray[] = {"Litteraly Die", "Run you fuck!", "Fight the old man!"};
+    String optionsArray[] = {"Give up", "Run away!", "Fight the old man!"};
 
     String optionsArray2[] = {"Pick Up a Rock and Throw it at him", "Run away!", "Fight the spooky fish"};
 
