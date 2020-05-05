@@ -82,7 +82,7 @@ public class game {
             }
         }
         JOptionPane.showMessageDialog(null, "While running away from the burly fish man you stumble upon a large gate at the end of the tunnel");
-        JOptionPane.showMessageDialog(null, "As you walk up towards the large gate it starts to speek to you");
+        JOptionPane.showMessageDialog(null, "As you walk up towards the large gate it starts to speak to you");
         String gate = JOptionPane.showInputDialog(null, "WHOM STANDS BEFORE ME?");
         if (gate.equals(namn)) {
             JOptionPane.showMessageDialog(null, "SO YOU SPEAK THE TRUTH? WELL ANSWER ME THIS");
@@ -103,14 +103,14 @@ public class game {
         }
         JOptionPane.showMessageDialog(null, "The massive gates slowly opens..");
         JOptionPane.showMessageDialog(null, "Once the gates have finally opened you see a fork in the road");
-        Object jOptionPane4 = JOptionPane.showInputDialog(null, "The right path leads to a small mineshaft, The left path leads to a large open space.", "Wich path do you take?", JOptionPane.QUESTION_MESSAGE, null, choices.getOptionsArray4(), choices.getOptionsArray4()[0]);
+        Object jOptionPane4 = JOptionPane.showInputDialog(null, "The right path leads to a small mineshaft, The left path leads to a large open space.", "Which path do you take?", JOptionPane.QUESTION_MESSAGE, null, choices.getOptionsArray4(), choices.getOptionsArray4()[0]);
         if (jOptionPane4.equals("UNFINISHED I take the right path")) {
             JOptionPane.showMessageDialog(null, namn + " walks toward the old mineshaft...");
             JOptionPane.showMessageDialog(null, "You reach the old mineshaft wich seems abandoned since long ago..");
 
         } else {
             JOptionPane.showMessageDialog(null, namn + " walks toward the large open space...");
-            JOptionPane.showMessageDialog(null, "The large open space is eeriely empty...");
+            JOptionPane.showMessageDialog(null, "The large open space is ieriely empty...");
             JOptionPane.showMessageDialog(null, "But out of nowhere an arrow comes flying past you");
             Object jOptionPane5 = JOptionPane.showInputDialog(null, "You hear several more arrows come flying toward you!", "What do you do?", JOptionPane.WARNING_MESSAGE, null, choices.getOptionsArray5(), choices.getOptionsArray5()[0]);
             if (jOptionPane5.equals("Pretend to die")) {
