@@ -1,8 +1,8 @@
 public class DatabaseLoginData {
-    static String user = "sune";
-    static String password = "slipkn0t";
-    static String port = "";
-    static String DBname = "javadb";
-    static String DBURL = "";
+    static String user = "SuneBune";
+    static String password = "hej123";
+    static String port = "3306";
+    static String DBname = "textadventure";
+    static String DBURL = "192.168.0.155";
 }
 

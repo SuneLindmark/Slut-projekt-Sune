@@ -12,7 +12,7 @@ public class database {
             // Setup statement
             Statement stmt = conn.createStatement();
             // Create query and execute
-            String strSelect = "select title, price, qty from books";
+            String strSelect = "select body, description, qty from books";
             System.out.println("The SQL statement is: " + strSelect + "\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -22,10 +22,10 @@ public class database {
             System.out.println("The records selected are:");
             int rowCount = 0;
             while(rset.next()) {
-                String title = rset.getString("title");
-                double price = rset.getDouble("price");
+                String body = rset.getString("body");
+                String description = rset.getString("description");
                 int    qty   = rset.getInt("qty");
-                System.out.println(title + ", " + price + ", " + qty);
+                System.out.println(body + ", " + description + ", " + qty);
                 ++rowCount;
             }
             System.out.println("Total number of records = " + rowCount);
